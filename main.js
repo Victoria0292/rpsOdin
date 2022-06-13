@@ -1,3 +1,4 @@
+//picks a random choice based on the array length
 function computerPlay() {
   const choice = ["rock", "paper", "scissors"];
   return choice[Math.floor(Math.random() * choice.length)];
@@ -23,3 +24,13 @@ function playRound(playerSelection, computerSelection) {
 
   let playerScore = parseInt(0);
   let computerScore = parseInt(0);
+
+  for (let i = 0; i < 5; i++) {
+    let playerSelection = prompt(
+      "Pick a weapon: 'Rock, Paper, Scissors'"
+    ).toLowerCase();
+    const computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+    console.log("your score = " + playerScore);
+    console.log("Computer's score = " + computerScore);
+  }
