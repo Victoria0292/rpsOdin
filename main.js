@@ -10,7 +10,7 @@ function playRound(playerSelection, computerSelection) {
     return `It's a tie! You both chose ${playerSelection}`;
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
     playerScore++;
-    return "WooHoo! You win! Rock beats Scissors";
+    return "You win! Rock beats Scissors";
   } else if (playerSelection === "paper" && computerSelection === "rock") {
     playerScore++;
     return "Aw yeah! You win! Paper beats Rock";
