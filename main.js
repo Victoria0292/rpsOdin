@@ -13,7 +13,7 @@ function playRound(playerSelection, computerSelection) {
     return "You win! Rock beats Scissors";
   } else if (playerSelection === "paper" && computerSelection === "rock") {
     playerScore++;
-    return "Aw yeah! You win! Paper beats Rock";
+    return "You win! Paper beats Rock";
   } else if (playerSelection === "scissors" && computerSelection === "paper") {
     playerScore++;
     return "You win! Scissors beats Paper";
